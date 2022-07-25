@@ -6,7 +6,8 @@ services:
       - "5000:5000"
     volumes:
       - .:~/data
+    networks:
+      - magic-net    
 networks:
-  default:
-    name: magic-net
+  magic-net:
     external: true

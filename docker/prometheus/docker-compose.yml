@@ -6,7 +6,8 @@ services:
       - "9090:9090"
     volumes:
       - .:~/data
+    networks:
+      - magic-net    
 networks:
-  default:
-    name: magic-net
+  magic-net:
     external: true
