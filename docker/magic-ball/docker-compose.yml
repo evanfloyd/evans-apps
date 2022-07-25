@@ -5,7 +5,7 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - magic_data:/data
+      - .:/data
 networks:
   default:
     name: magic-net

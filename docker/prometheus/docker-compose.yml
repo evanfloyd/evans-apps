@@ -5,7 +5,7 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - prometheus_data:/data
+      - .:/data
 networks:
   default:
     name: magic-net
