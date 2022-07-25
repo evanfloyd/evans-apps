@@ -1,4 +1,4 @@
-version: "3.3"
+version: "3.9"
 services:
   prometheus:
     build: .
@@ -9,5 +9,6 @@ services:
     networks:
       - magic-net    
 networks:
-  magic-net:
+  default:
+    name: magic-net
     external: true
