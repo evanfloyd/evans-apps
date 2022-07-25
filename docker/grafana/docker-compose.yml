@@ -1,0 +1,12 @@
+version: "1"  # optional since v1.27.0
+services:
+  grafana:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/data
+networks:
+  default:
+    name: magic-net
+    external: true
